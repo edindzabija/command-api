@@ -1,5 +1,7 @@
-# command-api
+# Command API
 
-Collection of terminal commands
+## A collection of terminal commands
 
 The goal of this project is learning .net core and building an API.
+
+
