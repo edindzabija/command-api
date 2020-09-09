@@ -5,6 +5,11 @@ namespace Commander.Data
 {
     public class MockCommanderRepo : ICommanderRepo
     {
+        public void CreateCommand(Command cmd)
+        {
+            throw new System.NotImplementedException();
+        }
+
         public IEnumerable<Command> GetAllCommands()
         {
             var commands = new List<Command>
@@ -21,6 +26,11 @@ namespace Commander.Data
         public Command GetCommandById(int id)
         {
             return new Command { Id = 0, HowTo = "Display top ten running processes - sorted by memory usage", Line = "ps aux | sort -nk +4 | tail", Platform = "Linux" };
+        }
+
+        public bool SaveChanges()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
